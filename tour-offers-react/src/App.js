@@ -9,14 +9,20 @@ function App() {
 
   const fetchTours = async () => {
     setLoading(true);
-    const response = await fetch(url);
-    const tour = await response.json();
-    console.log(tour);
+
+    try {
+      const response = await fetch(url);
+      const tour = await response.json();
+      setLoading(false);
+      setTours(tours);
+    } catch (error) {
+      setLoading(false);
+    }
   };
 
   useEffect(() => {
     fetchTours();
-  });
+  }, []);
 
   if (loading) {
     return (
