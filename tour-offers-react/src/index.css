@@ -29,9 +29,9 @@ Variables
   --clr-grey-7: hsl(211, 27%, 70%);
   --clr-grey-8: hsl(210, 31%, 80%);
   --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-grey-10: hsl(75, 9%, 91%);
   --clr-white: #fff;
-  --clr-green-dark: rgb(37, 187, 137);
+  --clr-red-dark: rgb(243, 145, 99);
   --clr-blue-light: rgb(107, 230, 199);
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
@@ -219,10 +219,10 @@ main {
   display: block;
   width: 200px;
   margin: 1rem auto 0 auto;
-  color: var(--clr-green-dark);
+  color: var(--clr-red-dark);
   letter-spacing: var(--spacing);
   background: transparent;
-  border: 1px solid var(--clr-green-dark);
+  border: 1px solid var(--clr-red-dark);
   padding: 0.25rem 0.5rem;
   border-radius: var(--radius);
 }
