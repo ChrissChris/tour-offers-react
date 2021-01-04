@@ -11,7 +11,7 @@ const Tour = ({ id, image, info, price, name }) => {
           <h4>{name}</h4>
           <h4 className="tour-price">${price}</h4>
         </div>
-        {readMore ? info : `${info.substring(0, 200)}`}{" "}
+        {readMore ? info : `${info.substring(0, 200)}`}
         <button onClick={() => setReadMore(!readMore)}>
           {readMore ? "Show less" : "Read More"}
         </button>
