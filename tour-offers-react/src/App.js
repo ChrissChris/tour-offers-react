@@ -40,7 +40,7 @@ function App() {
     return (
       <main>
         <div className="title">No tours left...</div>
-        <button className="btn" onClick={removeTour}></button>
+        <button className="btn" onClick={fetchTours}></button>
       </main>
     );
   }
