@@ -31,7 +31,7 @@ Variables
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(75, 9%, 91%);
   --clr-white: #fff;
-  --clr-red-dark: rgb(243, 145, 99);
+  --clr-red-dark: rgb(247, 103, 37);
   --clr-blue-light: rgb(107, 230, 199);
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
@@ -96,6 +96,10 @@ p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
+.single-tour .delete-btn:hover {
+  color: var(--clr-primary-10);
+  background-color: var(--clr-red-dark);
+}
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
@@ -133,6 +137,11 @@ p {
     width: 95vw;
   }
 }
+.empty-offers {
+  display: flex;
+  position: center;
+  justify-content: center;
+}
 .btn {
   background: var(--clr-primary-5);
   display: inline-block;
@@ -143,7 +152,9 @@ p {
   letter-spacing: var(--spacing);
   border-color: transparent;
   cursor: pointer;
-  margin-top: 2rem;
+  padding: 0.5rem;
+  margin-top: 3rem;
+  margin-right: 1rem auto;
   font-size: 1.2rem;
 }
 /*
@@ -162,6 +173,7 @@ main {
 .title {
   text-align: center;
   margin-bottom: 4rem;
+  align-items: center;
 }
 .underline {
   width: 6rem;
@@ -225,4 +237,9 @@ main {
   border: 1px solid var(--clr-red-dark);
   padding: 0.25rem 0.5rem;
   border-radius: var(--radius);
+}
+
+.single-tour .delete-btn:hover {
+  color: var(--clr-primary-10);
+  background-color: var(--clr-red-dark);
 }
