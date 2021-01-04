@@ -8,7 +8,7 @@ function App() {
   const [tours, setTours] = useState([]);
 
   const removeTour = (id) => {
-    const newTours = tours.filter((tour) => !tour.id == id);
+    const newTours = tours.filter((tour) => !tour.id !== id);
     setTours(newTours);
   };
 
@@ -33,6 +33,14 @@ function App() {
     return (
       <main>
         <Loading />
+      </main>
+    );
+  }
+  if (tours.length === 0) {
+    return (
+      <main>
+        <div className="title">No tours left...</div>
+        <button className="btn" onClick={removeTour}></button>
       </main>
     );
   }
