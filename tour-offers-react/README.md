@@ -2,8 +2,6 @@
 
 </br>
 
----
-
 #### This is tours-offer-page created with React JS, HTML, CSS and JS
 
 </br>
